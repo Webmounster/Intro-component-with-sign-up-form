@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --font: 'Poppins', sans-serif;
+
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+
+    /* ### Accent */
+
+    --Blue: hsl(248, 32%, 49%);
+
+    /* ### Neutral */
+
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: hsl(246, 25%, 77%);
+
+    /* Propios */
+    --SombraGris: hsla(249, 10%, 26%, 0.267);
+    --SombraVerde: hsl(154, 66%, 41%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/bg-intro-mobile.png);
+    background-color: var(--Red);
+    font-family: var(--font);
+    font-size: 16px;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ?------------- SECTION 1 ------------------------ */
+.section1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 49px;
+}
+
+.section1__titulo {
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-bottom: 27px;
+}
+.section1__parrafo {
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+/* ?------------- SECTION 2 ------------------------ */
+
+.section2__precio {
+    color: white;
+    font-weight: 400;
+    padding: 23px 55px;
+    background-color: var(--Blue);
+    text-align: center;
+    border-radius: 12px;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+    box-shadow: 0 8px var(--SombraGris);
+}
+
+.section2__precio--free {
+    font-weight: 700;
+}
+
+.section2__form {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px 25px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 10px var(--SombraGris);
+}
+
+.form__caja {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__caja--input {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid var(--GrayishBlue);
+    border-radius: 8px;
+    outline: none;
+    font-weight: 700;
+    color: var(--DarkBlue);
+}
+
+.form__caja--icon {
+    color: var(--Red);
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    visibility: hidden;
+}
+
+.form__caja--ojo {
+    color: var(--GrayishBlue);
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.error {
+    text-align: right;
+    color: var(--Red);
+    font-size: 0.6rem;
+    font-weight: 400;
+    padding: 5px;
+    display: none;
+}
+
+.form__btn {
+    padding: 20px;
+    border: 1px solid var(--Green);
+    border-radius: 8px;
+    outline: none;
+    font-weight: 700;
+    color: white;
+    background-color: var(--Green);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    cursor: pointer;
+    box-shadow: 0 5px var(--SombraVerde);
+    margin-bottom: 10px;
+}
+
+.section2__parrafo {
+    text-align: center;
+    font-size: 0.6rem;
+    padding: 0 30px;
+    color: var(--GrayishBlue);
+}
+
+.section2__parrafo--span {
+    color: var(--Red);
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+/* -------------------------------------- FOOTER ------------------------ */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* ----------------------------- MEDIA QUERY(1440px)----------------------- */
+
+@media only screen and (min-width: 1440px) {
+    body {
+        background-image: url(../images/bg-intro-desktop.png);
+    }
+
+    .container {
+        width: 1112px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* ?------------- SECTION 1 ------------------------ */
+
+    .section1 {
+        text-align: left;
+        margin-bottom: 0;
+        width: 496px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .section1__titulo {
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 27px;
+    }
+    .section1__parrafo {
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+
+    /* ?------------- SECTION 2 ------------------------ */
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 540px;
+    }
+}

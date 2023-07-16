@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+
+      <!-- !---------------------- SECTION 1 ------------------------------ -->
+      <section class="section1">
+        <h1 class="section1__titulo">Learn to code by watching others</h1>
+
+        <p class="section1__parrafo">
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.
+        </p>
+      </section>
+
+      <!-- !---------------------- SECTION 2 ------------------------------ -->
+      <section class="section2">
+        <p class="section2__precio"><span class="section2__precio--free">Try it free 7 days</span> then $20/mo.
+          thereafter
+        </p>
+
+        <form class="section2__form form" action="#" method="post">
+
+          <div class="form__caja">
+            <input class="form__caja--input first-name" type="text" name="first-name" placeholder="First Name">
+            <p class="form__caja--icon"><i class="fa-solid fa-circle-exclamation fa-lg"></i></p>
+            <p class="error error-firstName">First Name cannot be empty</p>
+          </div>
+
+          <div class="form__caja">
+            <input class="form__caja--input last-name" type="text" name="last-name" placeholder="Last Name">
+            <p class="form__caja--icon"><i class="fa-solid fa-circle-exclamation fa-lg"></i></p>
+            <p class="error error-lastName">Last Name cannot be empty</p>
+          </div>
+
+          <div class="form__caja">
+            <input class="form__caja--input email" type="text" name="email" placeholder="Email Address">
+            <p class="form__caja--icon"><i class="fa-solid fa-circle-exclamation fa-lg"></i></p>
+            <p class="error error-email">Email cannot be empty</p>
+          </div>
+
+          <div class="form__caja">
+            <input class="form__caja--input password" type="password" name="password" placeholder="Password">
+            <p class="form__caja--icon"><i class="fa-solid fa-circle-exclamation fa-lg"></i></p>
+            <!-- <p class="form__caja--ojo"><i class="fa-solid fa-eye fa-lg"></i></p> -->
+            <p class="form__caja--ojo"><i class="ojo fa-solid fa-eye fa-lg"></i></p>
+            <p class="error error-password">Password cannot be empty</p>
+          </div>
+
+          <input class="form__btn" type="submit" value="Claim your free trial">
+
+
+          <p class="section2__parrafo">
+            By clicking the button, you are agreeing to our <span class="section2__parrafo--span">Terms and
+              Services</span>
+
+          </p>
+        </form>
+
+      </section>
+
+    </div>
+  </main>
+
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Webmounster</a>.
+    </p>
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
